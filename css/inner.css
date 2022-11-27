@@ -1,0 +1,616 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Common main heading for inner pages */
+header{
+    margin-bottom: 25px;
+}
+.main_heading_sec{
+    padding: 0;
+    margin-bottom: 0px;
+}
+.heading{
+    width: 100%;
+    padding: 15px 0;
+    /* background-color: hotpink; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.heading h3{
+  font-size: 20px;
+  color: #5b5b5b;
+  text-align: center;
+}
+.heading h1{
+    margin: 0;
+    color: #5b0000;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* / Image Gallery Page Start / */
+/* / Create four equal columns that sits next to each other / */
+.gallery_wrapper .column {
+    /* -ms-flex: 25%; / IE10 / */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 7px;
+  }
+  .gallery_wrapper .column a{
+      margin-bottom: 15px;
+      overflow: hidden;
+  }
+.gallery_wrapper .column img {
+    vertical-align: middle;
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+.gallery_wrapper .column a:hover img{
+    transform: scale(1.2);
+}
+  
+  /* / Responsive layout - makes a two column-layout instead of four columns / */
+  @media screen and (max-width: 800px) {
+.gallery_wrapper .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+  /* / Responsive layout - makes the two columns stack on top of each other instead of next to each other / */
+@media screen and (max-width: 600px) {
+.gallery_wrapper .column {
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+}
+}
+
+
+/* FILMS Part started here */
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    grid-gap: 15px;
+    max-width: 1100px;
+    padding: 15px; 
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  .thumbnail{
+      object-position: center;
+  }
+  
+  .video-gallery .gallery-item {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: #000;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .video-gallery .gallery-item img {
+    position: relative;
+    display: block;
+    width: 115%;
+    height: 300px;
+    object-fit: cover;
+    opacity: .5;
+    /*transition: opacity .35s, transform .35s;*/
+    transition: all 350ms ease-in-out;
+    transform: translate3d(-23px, 0, 0);
+    /*backface-visibility: hidden;*/
+  }
+  
+  .north-cascades-img {
+    object-position: 50% 30%;
+  }
+  
+  .video-gallery .gallery-item .gallery-item-caption {
+    padding: 32px;
+    font-size: 1em;
+    color: #fff;
+    margin-top: 31px;
+}
+   
+  
+  .video-gallery .gallery-item .gallery-item-caption,
+  .video-gallery .gallery-item .gallery-item-caption > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .video-gallery .gallery-item h2 {
+    font-weight: 300;
+    overflow: hidden;
+    padding: 0px 0 10px 0;
+    font-size: 23px;
+    margin-bottom: 26px;
+    display: block;
+    position: relative;
+  }
+    
+  .video-gallery .gallery-item p {
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 16px;
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(10%, 0, 0);
+  }
+  .video-gallery .gallery-item .play-film{
+    width: 60px;
+    height: 60px;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(10%, 0, 0);
+    opacity: 0;
+  }
+  .video-gallery .gallery-item:hover .play-film {
+    opacity: 1;
+  }
+  .video-gallery .gallery-item .film-date{
+      font-size: 10px;
+  }
+  
+  .video-gallery .gallery-item:hover img {
+    opacity: 0.5;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .video-gallery .gallery-item .gallery-item-caption {
+    text-align: left;
+  }
+  
+  .video-gallery .gallery-item h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 15%;
+    height: 1px;
+    background: #fff;
+    transition: transform 0.3s;
+    transform: translate3d(-100%, 0, 0);
+  }
+  
+  .video-gallery .gallery-item:hover h2::after {
+    transform: translate3d(0, 0, 0);
+  }
+  
+  .video-gallery .gallery-item:hover p {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+  
+  
+  @media screen and (max-width: 784px) {
+    .video-gallery {
+      width: 100%;
+      padding: 15px;    
+  
+    }
+    .video-gallery .gallery-item {
+      width: 95%;
+      margin: 0 auto; 
+      width: 100%;
+    }
+  }
+
+  /* Contact US */
+  .contact-us{
+      width: 100%;
+      height: auto;
+      /* background-image: linear-gradient( #5b0000,goldenrod); */
+      /* background-color: goldenrod; */
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: wrap;
+  }
+  .second-header{
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  .address-details{
+    height: 100%;
+    border-radius: 3px;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    text-align: center;
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 10px;
+    transition: 0.5s all ease-in-out;
+}
+
+.address-details:hover{
+  transform: scale(1.1);
+}
+  .address-details p i{
+    padding: 10px;
+    background-color: #5b0000;
+    height: 37px;
+    width: 37px;
+    border-radius: 50%;
+    color: #fff;
+  }
+  
+  .get-in-touch{
+      width: 100%;
+      color: #5b0000;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      padding: 25px 0;
+  }
+  .contact-us{
+      /* background: #fff;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; */
+      border-radius: 3px;
+      padding: 15px;
+      margin-top: 30px;
+  }
+  .contact-form div{
+      margin: 6px 0;
+  }
+  .get-in-touch h2{
+      text-align: center;
+      font-size: 22px;
+  }
+  .get-in-touch h4{
+    text-align: center;
+    font-size: 20px;
+}
+  .form-control{
+      width: 100%;
+  }
+  .form-floating textarea{
+    height: 148px !important;
+  }
+  .contact-message{
+      height: 200%;
+  }
+  .message-box{
+    color: gray;
+    margin-left: 15px;
+  }
+  .contact-submit{
+      /* margin-left: 38%; */
+      background-color: transparent;
+    border: 1px solid #5b5b5b;
+    color: #5b5b5b;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 0px !important;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 15px;
+}
+  
+  .contact-submit:hover{
+    background: transparent;
+      color: #5b0000;
+      outline: none;
+      border: 1px solid #5b0000;
+  }
+  /* For Responsive Contact Us */
+  @media screen and (min-width: 361px) and (max-width: 500px){
+    .address, .get-in-touch{
+        width: 100%;
+    }
+    .address{
+        margin-top: 0;
+    }
+    .add-bg{
+        padding-top: 25px;
+        padding-left: 0px;
+    }
+    
+  }
+
+  @media screen and (max-width: 360px){
+    .address, .get-in-touch{
+        width: 100%;
+    }
+    .address{
+        margin-top: 0;
+    }
+    .contact-submit{
+      margin-top: 10px;
+    }
+    .add-bg{
+        padding-top: 25px;
+        padding-left: 0px;
+    }  
+    .contact-form div{
+        margin: 0 0 4px 0;
+    }   
+    input{
+        margin-top: 0px;
+    } 
+    /* For RESPONSIVE */
+  .blog{
+    width: 100%;
+  }
+}
+    
+
+  /* BLOG Part */
+  .blog{
+    background-color: #fff;
+    height: auto;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .blog .blog-date{
+    font-size: 12px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    color: #5b0000;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+  }
+  .blog h3{
+    font-size: 18px;
+    color: #5b5b5b;
+  }
+  .blog img{
+    width: 100%;
+    height: 180px;
+  }
+  .blog button{
+    background: #fff;
+    color: #5b0000;
+    padding: 3px 10px;
+    font-size: 11px;
+    outline: none;
+    border: 1px solid #5b0000;
+  }
+  
+  
+
+/* BLOG VIEW Part started here */
+.blogView-img{
+  width: 100%;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  /* overflow: hidden; */
+}
+.blog-l-image{
+  overflow: hidden;
+}
+.blogView-img img{
+  width: 100%;
+  height: 290px;
+  transition: 2s all ease-in-out;
+}
+.blogView-img img:hover{
+  transform: scale(1.2);
+}
+.blogView-img h3{
+  font-size: 20px;
+  color: #5b0000;
+}
+.blogView-img .blog-date{
+  padding-top: 10px;
+    color: #5b5b5b;
+    font-size: 14px;
+    border-bottom: 1px dashed #ddd;
+    padding-bottom: 7px;
+    margin-bottom: 10px;
+}
+.blogView-img p{
+  color: #5b5b5b;
+}
+.search-blog, .recent-post{
+  width: 100%;
+  padding: 10px;
+  margin-top: 13px;
+  /* background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px; */
+}
+.search-blog input{
+  width: 80%;
+  height: 50px;
+  padding-left: 15px;
+  outline: none;
+}
+.search-blog button{
+  height: 50px;
+  width: 50px;
+  background-color: #5b0000;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin-left: -5px;
+  margin-top: 1px;
+}
+.recent-post h2{
+  font-size: 16px;
+}
+.recent-post-cards{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  margin-bottom: 15px;
+  margin-left: 2px;
+  padding: 5px;
+}
+.post-card-img{
+  width: 25%;
+  height: 75px;
+}
+.post-card-img img{
+  width: 100%;
+  height: 100%;
+}
+.post-card-txt{
+  flex: 1;
+  padding-left: 10px;
+}
+.post-card-txt h3{
+  font-size: 15px;
+  color: #5b0000;
+}
+.post-card-txt .blog-date{
+  color: #5b5b5b;
+    font-size: 12px;
+    border-top: 1px dashed #ddd;
+    padding-top: 2px;
+}
+/* BLOG VIEW RESPONSIVE */
+@media screen and (max-width: 360px){
+  .blogView-img-outer{
+    width: 100%;
+  }
+  .search-outer{
+    width: 100%;
+  }
+}
+
+
+/* PreWedd View Page start Here */
+h5{
+  font-size: 18px;
+  color: #5b0000;
+  text-align: center;
+}
+.preWedd-inner-date{
+  font-size: 14px;
+  text-align: center;
+}
+.preWeddingView-video{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.preWeddingView-video iframe{
+  width: 100%;
+}
+
+.pre_weddComments .pre_wedd_outer{
+  display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 5%) 0px 20px 30px;
+    padding: 30px;
+    margin-bottom: 85px;
+    flex-wrap: wrap;
+    position: relative;
+    border-radius: 10px;
+}
+.pre_weddComments .pre_wedd_outer h5{
+  text-align: left;
+    font-size: 15px;
+    color: #5b0000;
+}
+.pre_weddComments .pre-wed-story{
+  padding: 35px;
+}
+.pre_weddComments .pre_wedd_outer .pre_img{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.pre_weddComments .pre_wedd_outer .pre_img figure{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.pre_weddComments .pre_wedd_outer .pre_img figure img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.pre_weddComments .pre_wedd_outer .pre_img h5{
+  font-size: 14px;
+  padding-top: 5px;
+}
+.pre_weddComments .pre_wedd_outer .pre_img .preWedd-date{
+  font-size: 11px;
+}
+.pre_weddComments .pre_wedd_outer .pre_content{
+  flex: 1;
+  align-items: flex-start;
+  color: #5b5b5b;
+}
+.pre_weddComments .pre_wedd_outer .pre_content p{
+  margin-bottom: 8px;
+}
+figure{
+  margin: 2px;
+  box-shadow: rgba(0, 0, 0, 20%) 0px 0px 10px;
+}
+.pre_weddComments .pre_wedd_outer .pre-wed-left, .pre_weddComments .pre_wedd_outer .pre-wed-right{
+  position: absolute;
+}
+.pre_weddComments .pre_wedd_outer .pre-wed-left{
+  top: -58px;
+    left: -18px;
+}
+.pre_weddComments .pre_wedd_outer .pre-wed-right{
+  bottom: -38px;
+    right: -10px;
+}
+.pre_weddComments .pre_wedd_outer .pre-wed-left img, .pre_weddComments .pre_wedd_outer .pre-wed-right img{
+  width: 135px;
+}
+.pre-story-h{
+  font-size: 18px;
+  color: #5b0000;
+  padding-bottom: 90px;
+}
+/* RESPONSIVE PreWeddingView Start */
+@media screen and (max-width: 360px){
+  .pre_weddComments .pre_wedd_outer .pre_img{
+    width: 100%;
+  }
+  .pre_weddComments .pre_wedd_outer .pre_content{
+    order: 2;
+  }
+  .pre_weddComments .pre_wedd_outer .pre-wed-left img, .pre_weddComments .pre_wedd_outer .pre-wed-right img{
+    width: 107px;
+  }
+  .post-card-txt h3 {
+    font-size: 15px;
+    color: #5b0000;
+}
+}
+@media screen and (min-width: 361px) and (max-width: 774px) {
+  .pre_weddComments .pre_wedd_outer .pre_img{
+    width: 100%;
+  }
+  .pre_weddComments .pre_wedd_outer .pre_content{
+    order: 2;
+  }
+   /* For RESPONSIVE */
+   .blog{
+    width: 100%;
+  }
+}
+.blogView-bg{
+  position: absolute;
+  z-index: -2;
+}

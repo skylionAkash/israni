@@ -1,0 +1,665 @@
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+.prewedd-pagi:active{
+    color: #5B0000;
+}
+img{
+    object-fit: cover;
+}
+/* / custom font start / */
+
+@font-face {
+    font-family: Brandon_bld;
+    src: url("../fonts/Brandon_bld.woff");
+}
+@font-face {
+    font-family: Brandon_blk;
+    src: url("../fonts/Brandon_blk.woff");
+}
+@font-face {
+    font-family: Brandon_med;
+    src: url("../fonts/Brandon_med.woff");
+}
+@font-face {
+    font-family: Brandon_reg;
+    src: url("../fonts/Brandon_reg.woff");
+}
+
+/* / custom font end / */
+a{
+    text-decoration: none;
+}
+a:hover{
+    color: #5B0000;
+}
+
+section{
+    padding: 30px 0; 
+}
+
+/* Navbar started here */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 39px;
+    padding-bottom: 15px;
+}
+.logo img{
+    width: 180px;
+}
+#navbarNav{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0px;
+}
+#navbarNav ul li a{
+    color:#5B0000;
+    padding: 7px 18px;
+}
+.toggle-button{
+    margin-left: 100px;
+    margin-top: -62px;
+}
+
+body{
+    position: relative;
+    font-family: Brandon_reg;
+    overflow-x: hidden;
+    /* background-size: 100% 17%; */
+}
+.absoHeadImg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    height: auto;
+}
+.absoFootImg{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -5;
+    height: auto;
+}
+
+/* NavBar  started here */
+.menu li a{
+    font-size: 14px;
+}
+#navbarNav ul li a:hover{
+    color: rgba(91,0,0,0.7);
+}
+/* Slider */
+.home-slide{
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    overflow: hidden;   
+}
+.carousel-inner{
+    border-radius: 5px;
+}
+.home-slide img{
+    border-radius: 5px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* common_heading */
+.common_heading{
+    margin-bottom: 25px;
+}
+.common_heading h3{
+    font-size: 22px;
+    text-align: center;
+    color: #5B0000;
+    font-weight: 800;
+    /* padding-top: 35px; */
+}
+.common_heading h4{
+    font-size: 19px;
+    text-align: center;
+    color: #5B0000;
+    padding-bottom: 10px;
+}
+.common_heading p{
+    font-size: 17px;
+    text-align: center;
+    color: #5B0000;
+    padding: 20px;
+}
+.about_wrapper{
+    position: relative;
+    /* padding: 120px 0; */
+}
+.about_wrapper p{
+    padding: 0 10%;
+    
+}
+.about_wrapper .top-left{
+    position: absolute;
+    left: 0;
+    top: -62px;
+}
+.about_wrapper .bottom-right2{
+    position: absolute;
+    right: 0;
+    bottom: -61px;
+}
+
+/* Slider photography */
+.photo-container {
+    width: 100%;
+    height: 360px;
+  }
+  .photo-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    height: 325px;
+  }
+  .photo-slide .photo_inner{
+      width: 100%;
+  }
+  .photo-next, .photo-prev, .video-next, .video-prev{
+    transform: translateY(-6%);
+    color: #5B0000;
+    background-color: rgba(255,255,255,0.7);
+    font-size: 13px;
+    width: 30px;
+    height: 30px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+    border-radius: 50%;
+  }
+  .photo-prev{
+      left: 10px;
+  }
+  .photo-next{
+    right: 10px;
+}
+  .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after{
+    font-size: 16px;
+  }
+  .photo-next:hover, .photo-prev:hover, .video-next:hover, .video-prev:hover{
+      background-color: #fff;
+  }
+  .photo-slide h4{
+    font-size: 18px;
+    padding: 15px 0 25px 0;
+    color: #5B0000;
+  }
+
+  .photo-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .show-btn, .contact-btn{
+    background-color:transparent;
+    border: 1px solid #5b5b5b;
+    color: #5b5b5b;
+    width: auto;
+    margin: 0 auto;
+    border-radius: 0px !important;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px 15px;
+  }
+  .show-btn:hover, .contact-btn:hover, .contact-submit:hover {
+    color: #5b0000;
+    border: 1px solid #5b0000;
+    outline: none;
+    background: transparent;
+    /* color: #fff; */
+}
+.show-btn:focus, .contact-btn:focus, .contact-submit:focus{
+    box-shadow: none;
+    background: transparent;
+}
+.contact-btn a{
+    text-decoration: none;
+    color: #5b5b5b;
+}
+.contact-btn a:hover{
+    text-decoration: none;
+    color: #5b0000;
+}
+/* .contact-btn{
+    margin-top: 0px;
+} */
+
+  /* Slider VIDEO */
+
+  .video-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .video-slide h4{
+    font-size: 18px;
+    padding: 15px 0 25px 0;
+    color: #5B0000;
+  }
+  /* FILM Section */
+  .film-slider{
+      width: 100%;
+      position: relative;
+  }
+ 
+  .video_bg{
+      position: relative;
+    }
+    .video-slide .video_bg .video_Img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .film-slider .video_bg .play-btn2{
+        position: absolute;
+        width: 75px;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .video_name h4{
+        text-align: center;
+    }
+    .video-next, .video-prev{
+        transform: translateY(-91%);
+        color: #5B0000;
+        background-color: rgba(255,255,255,0.7);
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 10px;
+        border-radius: 50%;
+      }
+  /* PRE-WEDDING section started here */
+  .pre_weddsSliderWrap{
+      width: 100%;
+  }
+  .pre_wedd_container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding-bottom: 50px;
+  }
+
+  .pre_wedSlide {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-size: cover;
+    border: 10px solid #fff;
+    /* box-shadow: 0 0 5px #333; */
+    /* background-size: 100%; */
+    background-repeat: no-repeat;
+    height: 470px;
+    width: 100%;
+  }
+  .pre_wedname{
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      width: 90%;
+      height: 60px;
+      color: #fff;
+      background-color: rgba(91,0,0,0.5);
+      margin-bottom: 20px;
+      border-radius: 10px;
+      padding: 0 16px;
+  }
+  .pre_wedname .date{
+      padding: 7px;
+  }
+  .pre_wedname .date h4{
+     font-size: 17px;
+  }
+  .pre_wedname .date p{
+    font-size: 11px;
+    font-weight: 100;
+ }
+ .pre_wedname img{
+    width: 30px;
+    padding-top: 15px;
+} 
+  /* Footer started here */
+  footer{
+      margin-top: 50px;
+      text-align: center;
+  }
+  .social-icon a{
+      padding: 10px;
+  }
+  .social-icon a image{
+      width: 40px;
+      height: 40px;
+    transition: transform .2s;
+  }
+  .social-icon a image:hover{
+    transform: scale(1.5);
+  }
+  .tele{
+      margin-bottom: 20px;
+  }
+  .tele h3{
+      font-size: 20px;
+      color: #5b5b5b;
+  }
+  .blogs{
+      display:inline-flex;
+  }
+  .blogs li{
+      list-style-type: none;
+      padding: 15px;
+      font-size: 20px;
+  }
+  .blogs li a{
+    color: #5b5b5b;
+    font-weight: 600;
+  }
+  .blogs li a:hover{
+    color: #5B0000;
+}
+  .copyright{
+      color: #5b5b5b;
+      display: flex;
+      justify-content: center;
+  }
+  .copyright a{
+    color: #5b5b5b;
+  }
+  .copyright a:hover{
+      color: #5B0000;;
+  }
+  .footer{
+      position: relative;
+  }
+  
+
+  /* FOR RESPONSIVE  */
+  @media screen and (max-width: 360px) {
+
+  .toggle-icon{
+      width: 20px;
+      height: 21px;
+      margin-left: -4px;
+  }
+  .logo{
+      padding-bottom: 0px;
+  }
+.logo img{
+    width: 106px;
+    margin-left: 0px;
+}
+/* .film-heading{
+    margin-top: -80px
+}
+.preWedd-heading{
+    margin-top: -86px;
+}
+.footer-heading{
+    margin-top: -80px;
+} */
+.bg-p {
+    margin-top: -28px;
+}
+section{
+    padding: 0px 0;
+    margin: 0 0;
+    margin-bottom: 15px
+}
+.photo-container {
+    width: 100%;
+    height: 231px;
+  }
+.about_wrapper{
+    padding: 30px 0;
+}
+.about_wrapper .top-left{
+    width: 116px;
+    top: -45px;
+}
+.about_wrapper .bottom-right2{
+    width: 116px;
+    bottom: -10px;
+}
+.common_heading h3{
+    font-size: 17px;
+    /* padding-top: 30px;
+    margin-top: 80px; */
+}
+.common_heading h4{
+    font-size: 15px;
+}
+.common_heading .know-more{
+    padding-bottom: 25px;
+}
+.common_heading p{
+    font-size: 13px;
+}
+.blogs li{
+    font-size: 12px;
+    padding: 5px;
+}
+.copyright{
+    font-size: 12px;
+    display: block;
+    line-height: 5px;
+}
+.tele h3{
+    font-size: 15px;
+}
+.toggle-button {
+    margin-left: -24px;
+    margin-top: -52px;
+    width: 37px;
+    height: 37px;
+}
+/* .enq-h3{
+    margin-top: -62px;
+} */
+/* .toggle-button{
+    padding-left: 40px;
+    margin-top: -50px;
+    width: 0;
+    height: 0;
+}
+.toggle-icon{
+    font-size: 20px;
+    margin-left: -166px;
+    margin-top: -20px;
+} */
+.home-slide{
+    border-radius: 10px;
+    height: 240px;
+}
+.pre_wedSlide {
+    height: 231px;
+  }
+  .pre_wedname{
+      position: relative;
+  }
+  .pre_wedname .date h4{
+    font-size: 17px;
+    float: left;
+ }
+ .pre_wedname .date p{
+    position: absolute;
+    bottom: -3px;
+    left: 131px;
+ }
+ .photo-next{
+    right: 10px;
+}
+.bg-right-1, .bg-right-2{
+    width: 0px;
+    overflow: hidden;
+}
+}
+/* .show-btn{
+    margin-top: 5px;
+} */
+
+@media screen and (max-width: 906px) and (min-width: 361px){
+    
+    .bg-right-1 .bg-right-2{
+        width: 0px;
+        overflow: hidden;
+    }
+    .logo img{
+        width: 131px;
+    }
+    .toggle-button {
+        margin-left: 23px;
+        margin-top: -62px;
+    }
+    section{
+        padding: 21px 0 51px 0;
+    }
+
+
+    .top-left, .bottom-right2{
+        width: 120px;
+        padding: 40px 0;
+    }
+    
+    .blogs li{
+        font-size: 16px;
+        padding: 10px;
+    }
+    .copyright{
+        font-size: 14px;
+        display: block;
+        line-height: 5px;;
+    }
+    .tele h3{
+        font-size: 17px;
+    }
+    .home-slide img{
+        height: 350px;
+        margin-top: 30px;
+    }
+    }
+ @media screen and (min-width: 907px) {
+       
+          /* .logo img{
+            width: 131px;
+        } */
+        
+        .top-left, .bottom-right2{
+            width: auto;
+        }
+        .copyright{
+            font-size: 18px;
+            
+        }
+        /* .home-slide{
+            height: auto;;
+        } */
+    }
+
+    /* .page_wrapper{
+        position: relative;
+        z-index: 5;
+    } */
+
+    /* Bacgrounds */
+    .footer-bg{
+        margin-bottom: 0px;
+    }
+    
+    /* .footinner{
+        position: relative;
+        z-index: 10;
+    } */
+    .bg-p{
+        /* background-image: url("../images/bg/bg-2.png"); */
+        padding: 25px 20px;
+        background-color: #f5f5f5;
+        /* background-repeat: no-repeat; */
+        border-radius: 20px;
+        /* margin-top: -100px;
+        margin-bottom: -100px; */
+    }
+    /* israni photography bg */
+    .israni-photography{
+        position: relative;
+    }
+    .photgraphyWrapp{
+        position: relative;
+    }
+    .bg-left-1{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        /* background-color: orangered; */
+    }
+    .bg-right-1{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        right: 0;
+        bottom: 0;
+        padding: 262px 0;
+        z-index: -1;
+        /* background-color: green; */
+    }
+    .israni-film{
+        position: relative;
+    }
+    .film_MainWrspp{
+        position: relative;
+    }
+    .bg-left-2{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        /* background-color: orangered; */
+    }
+    .bg-right-2{
+        position: absolute;
+        width: 200px;
+        height: 150px;
+        right: 0;
+        padding: 262px 0;
+        z-index: -1;
+        bottom: 0;
+        /* background-color: green; */
+    }
+    .wedd-bg{
+        position: relative;
+    }
+    .preWeddsWrappe{
+        position: relative;
+    }
+    .bg-left-3{
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        /* background-color: orangered; */
+    }
+    
+/* .photo-slide{
+    padding-left: 12px;
+} */
